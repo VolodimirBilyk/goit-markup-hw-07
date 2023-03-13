@@ -1,0 +1,1094 @@
+/* Задаємо основні кольори документу */
+:root {
+    --primary-text-color: #434455;
+    --title-text-color: #2E2F42;
+    --hero-image-text: #FFFFFF;
+    --futer-text: #E7E9FC;
+    --futer-text-studio: #F4F4FD;
+    --accent-text-color: #4D5AE5;
+    --border-color: #E7E9FC;
+    --btn-hov-foc-backcolor: #404BBF;
+    --futer-hero-backcolor: #2E2F42;
+    --secondary-backcolor: #F4F4FD;
+    --basic-backcolor: #FFFFFF;
+    --footer-socmedia-hover-backcolor: #31D0AA;
+    --costumers-color: #8E8F99;
+    --modal-color: #FCFCFC;
+    }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Задаємо головний шрифт сторінок */
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Скидаэмо браузерні приколи */
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Полоска для хедера */
+
+.header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Блоки для хедера */
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.header-container {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    padding-top: 21.5px;
+    padding-bottom: 21.5px;
+    margin-right: 76px;
+
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    color: var(--title-text-color);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.site-nav {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    gap: 40px;
+}
+
+.nav-item {
+    height: 24px;
+}
+
+.nav {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
+
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav.current::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--btn-hov-foc-backcolor);
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+    
+}
+
+.utitled-list-address {
+    display: flex;
+}
+
+.address {
+    margin-left: auto;
+}
+
+.mail-item {
+    margin-right: 40px;
+}
+
+.mail-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.phone-link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+/* Блоки першої секції */
+
+
+
+.container-main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 48px;
+    width: 498px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-button {
+    margin: 0 auto;
+    display: block;
+    padding: 16px 32px;
+}
+
+.hero-image {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    
+    height: 600px;
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url(../images/group-people-working-website-template.jpg);
+    background-repeat: no-repeat;
+    background-size: 1440px;
+    background-position: center;    
+}
+
+/* Блоки другої секції */
+
+.item-goals-svg {
+    width: 264px;
+    height: 112px;
+    left: 0px;
+    top: 0px;
+    background: var(--futer-text-studio);
+    border-radius: 4px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-bottom: 8px;
+}
+
+.icon-goals {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin: 0 auto;
+}
+
+.container-goals {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    align-items: center;
+}
+
+.goals {
+    display: flex;
+    gap: 24px;
+}
+
+.item-goals {
+    width: 264px;
+    flex-basis: calc((100% - 72px)) / 4;
+}
+
+.goals-title {
+    margin-bottom: 8px;
+}
+
+/* Блоки третьої секції */
+
+.container-we-doing {
+    padding-bottom: 120px;
+    align-items: center;
+}
+
+.works-picture {
+    flex-basis: calc((100% - 48px)) / 3;
+}
+
+.works-images {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 72px;
+}
+
+/* Блоки четвертої секції */
+
+.team-socmedia {
+    width: 16px;
+    height: 16px;
+    fill: var(--futer-text-studio);
+}
+
+.socmedia-item {
+    width: 40px;
+    height: 40px;
+}
+
+.team-socmedia-ancer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-text-color);
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 500ms; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-socmedia-ancer:hover,
+.team-socmedia-ancer:focus {
+    background-color: var(--btn-hov-foc-backcolor)
+}
+
+.socmedia-list {
+    list-style: none;
+    display: flex;
+    margin-top: 8px;
+    justify-content: center;
+    gap: 24px;
+    
+}
+
+.container-team {    
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    align-items: center;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    flex-basis: calc((100% - 72px)) / 4;
+}
+
+.card-info {
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
+.name-title {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.job-title {
+    text-align: center;
+}
+
+/* Блоки пятої секції */
+
+.customers-list {
+    display: flex;
+    list-style: none;
+}
+
+.customers-svg {
+    fill: currentColor;
+}
+
+.customers-item {
+    width: 168px;
+    height: 88px;
+    margin-right: 24px;
+}
+
+.customers-item:last-child {
+    margin-right: 0;
+}
+
+.icon-cover {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--costumers-color);
+    color: var(--costumers-color);
+    border-radius: 4px;
+    transition-property: border, color;
+    transition-duration: 500ms; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-cover:hover,
+.icon-cover:focus {
+    border: 1px solid var(--btn-hov-foc-backcolor);
+    color: var(--btn-hov-foc-backcolor);
+}
+
+.customers-container {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+/* Блоки футера */
+
+.team-socmedia-footer {
+    width: 24px;
+    height: 24px;
+    fill: var(--futer-text-studio);
+}
+
+.socmedia-footer-item {
+    width: 40px;
+    height: 40px;
+}
+
+.socmedia-footer-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);;
+    transition-property: background-color; 
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.socmedia-footer-link:hover,
+.socmedia-footer-link:focus {
+    background-color: var(--footer-socmedia-hover-backcolor);
+}
+
+.footer-socmedia {
+    margin-left: 120px;
+}
+
+.title-media {
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--hero-image-text);
+}
+
+.footer-media-list {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+}
+
+.container-footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+}
+
+.footer-logo {
+   margin-left: 0;
+   margin-right: 0;
+}
+
+.call-to-action {
+    margin-top: 16px;
+    width: 264px;
+    margin-right: 0px;
+}
+
+/* Блоки Портфоліо Кнопки */
+
+.container-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.button-selection {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    margin-bottom: 72px;
+}
+
+/* Блоки портфоліо робити */
+
+.row-content {
+    border: 1px solid var(--border-color);
+    padding-top: 32px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    margin-top: -1px;
+}
+
+.card-discription {
+    background-color: var(--accent-text-color);
+    padding-top: 40px;
+    padding-right: 32px;
+    padding-left: 32px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 500ms; 
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .card-discription,
+.card:focus .card-discription {
+    transform: translateY(0%);  
+}
+
+.description-text {
+    color: var(--futer-text-studio);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.card-position {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Стилі карточок проектів */
+
+.project-card {
+    box-sizing: border-box;
+    background: var(--basic-backcolor);
+    transition-property: box-shadow;
+    transition-duration: 500ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі карточок проектів при hover,focus */
+.project-card:hover,
+.project-card:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    width: 360px;
+    margin-right: 24px;
+    margin-bottom: 48px;
+}
+
+.project-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.project-item:nth-last-child(-n+3) {
+    margin-bottom: 0;
+}
+
+/* Стилізація логотипу */
+
+
+.logo-web {
+    color: var(--accent-text-color);
+}
+/* Background color для Футера */
+.footer {
+    background: var(--futer-hero-backcolor);
+}
+/* Колір частини логотипу(Studio) в футері */
+.logo-studio {
+    color: var(--futer-text-studio);
+}
+/* Колір тексту абзацу в футері */
+.text-footer {
+    color: var(--futer-text);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+/* Прибираємо підкреслення посилань */
+a {
+    text-decoration: none;
+}
+/* Прибираємо крапки в ненумерованих списках */
+.utitled-list,
+.utitled-list-address,
+.site-nav {
+    list-style: none;
+}
+
+/* Стилі при hover,focus для посилань в навігації */
+.nav:hover,
+.nav:focus {
+    color: var(--btn-hov-foc-backcolor);
+}
+
+/* Підсвітка активної сторінки */
+.site-nav .nav.current {
+    color: var(--btn-hov-foc-backcolor);
+}
+
+/* Стилі для контактів */
+.mail-link,
+.phone-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Стилі при hover,focus для контактів */
+.mail-link:hover,
+.phone-link:hover,
+.mail-link:focus,
+.phone-link:focus {
+    color: var(--btn-hov-foc-backcolor);
+}
+
+/* Стилі для головного заголовка сторінки */
+.main-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--hero-image-text);
+}
+/* Стилі для головної кнопки сторінки */
+.main-button {
+    background-color: var(--accent-text-color);
+    border: 1px solid var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Стилі при hover,focus для головної кнопки */
+.main-button:hover,
+.main-button:focus {
+    background-color: var(--btn-hov-foc-backcolor);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: var(--btn-hov-foc-backcolor);
+}
+
+/* Стилі для тексту кнопки */
+.main-button-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--hero-image-text);
+    font-family: Roboto;
+}
+
+/* ховаємо заголовок h2 Goals of Web Studio */
+.invisible-title {
+    display: none;
+}
+/* Стилі заголовків h3 в 2й секції */
+.goals-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+/* Стилі заголовків h3 в 4й секції */
+.name-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+/* Стилі всіх абзаців */
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+/* Стилі заголовка 3ї секції */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--title-text-color);
+}
+/* Стилі для секції 4 */
+.team-section {background: var(--secondary-backcolor);}
+
+/* Стиль для карток в секції 4 */
+.team-card {
+    background: var(--basic-backcolor);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
+}
+
+/* Стилі кнопок */
+button {
+    background-color: var(--secondary-backcolor);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* Стилі тексту кнопок */
+.filter-button {
+    padding: 12px 24px;
+    border: 1px solid var(--border-color);
+    color: var(--accent-text-color);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    font-family: Roboto;
+    transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1), border 500ms cubic-bezier(0.4, 0, 0.2, 1), color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* Стилі при hover,focus для кнопок */
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--btn-hov-foc-backcolor);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border: 1px solid var(--btn-hov-foc-backcolor);
+    color: var(--hero-image-text);
+}
+
+    
+/* Стилі зоголовків h2 в списку робіт */
+.titles-of-works {
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+}
+
+/* Модальне вікно */
+
+.close {
+    width: 8px;
+    height: 8px;
+    fill: #000000;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: opacity 500ms, visibility 500ms;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: scale(0)
+}
+
+.modal {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 408px;
+    height: 584px;
+    background-color: var(--modal-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 500ms;
+    padding-top: 72px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+    padding-left: 24px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--border-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close:hover,
+.modal-close:focus {
+    background-color: var(--btn-hov-foc-backcolor);
+    border: 1px solid var(--btn-hov-foc-backcolor);
+}
+
+.modal-close:hover > .close,
+.modal-close:focus > .close {
+    fill: var(--basic-backcolor);
+}
+
+.modal-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+    margin-bottom: 16px;
+}
+
+.name-icon {
+    position: absolute;
+    left: 16px;
+    bottom: 10px;
+    fill: var(--futer-hero-backcolor);
+}
+
+.phone-icon {
+    position: absolute;
+    left: 16px;
+    bottom: 8px;
+    fill: var(--futer-hero-backcolor);
+}
+
+.mail-icon {
+    position: absolute;
+    left: 16px;
+    bottom: 8px;
+    fill: var(--futer-hero-backcolor);
+}
+
+.modal-name {
+    height: 40px;
+    width: 100%;
+    padding-left: 38px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    color: var(--primary-text-color);
+    font-size: inherit;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-name:hover,
+.modal-name:focus {
+    border: 1px solid var(--accent-text-color);
+}
+
+.name-input:hover + .name-icon,
+.name-input:focus + .name-icon {
+    fill: var(--accent-text-color);
+}
+
+.phone-input:hover + .phone-icon,
+.phone-input:focus + .phone-iconn {
+    fill: var(--accent-text-color);
+}
+
+.email-input:hover + .mail-icon,
+.email-input:focus + .mail-icon {
+    fill: var(--accent-text-color);
+}
+
+.modal-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--costumers-color);
+}
+
+.modal-textarea {
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 16px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+    border: 1px solid var(--accent-text-color);
+}
+
+input, textarea {
+    padding-top: 8px;
+    padding-left: 16px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+.modal-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0;
+    display: flex;
+}
+
+.check-box {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background-image: url(../images/off.svg);
+}
+
+.modal-checkbox:checked:focus + .check-box {
+    background-image: url(../images/on.svg);
+}
+
+.check-block {
+    display: flex;
+    align-items: center;
+}
+
+.text-privacy {
+    margin-left: 24px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: #757575;
+}
+
+.privacy {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    text-decoration-line: underline;
+    color: var(--accent-text-color);
+}
+
+textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.button-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--hero-image-text);
+
+    
+    margin-top: 24px;
+    margin-left: 95px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    width: 169px;
+    height: 56px;
+    background-color: var(--accent-text-color);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-submit:hover,
+.button-submit:focus {
+    background-color: var(--btn-hov-foc-backcolor);
+}
+
+.name-block {
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+
+
+.phone-block {
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+
+
+.mail-block {
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+
+
+/* Підписка в футері */
+
+.form-subscribe {
+    margin-left: 80px;
+}
+
+.form-wrapper {
+    display: flex;
+}
+
+.subscribe-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--basic-backcolor);
+    margin-bottom: 16px;
+
+}
+
+.submit {
+    display: flex;
+
+    padding: 8px 24px;
+    background-color: var(--accent-text-color);
+    border: none;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--basic-backcolor);
+    margin-left: 24px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit:hover,
+.submit:focus {
+    background-color: var(--btn-hov-foc-backcolor);
+}
+
+.icon-submit {
+    margin-left: 16px;
+    fill: currentColor;
+}
+
+.footer-input {
+    width: 264px;
+    height: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--futer-hero-backcolor);
+    color: var(--futer-text);
+    font-size: inherit;
+    padding: 16px;
+}
+
+label::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.00;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input:focus {
+    outline: none;
+}
