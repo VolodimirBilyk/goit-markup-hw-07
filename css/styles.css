@@ -547,17 +547,6 @@ button {
 
 /* Блоки четвертої секції */
 
-@media (max-width: 767px) {
-
-    .team-list {
-
-    } 
-
-    .team-card {
-    width: 264px;
-   }
-}
-
 .team-socmedia {
     width: 16px;
     height: 16px;
@@ -578,7 +567,7 @@ button {
     background-color: var(--accent-text-color);
     border-radius: 50%;
     transition-property: background-color;
-    transition-duration: 500ms; 
+    transition-duration: 500ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -593,34 +582,16 @@ button {
     margin-top: 8px;
     justify-content: center;
     gap: 24px;
-    
+
 }
 
-.container-team {    
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    align-items: center;
+.job-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
 }
-
-@media (min-width: 1024px) {
-    .team-list {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-        }
-    .team-card {
-        flex-basis: calc((100% - 72px)) / 4;
-        }
-}
-
-
-
-
 
 .card-info {
     padding-top: 32px;
@@ -634,9 +605,65 @@ button {
     text-align: center;
 }
 
-.job-title {
-    text-align: center;
+@media (max-width: 767px) {
+    .container-team {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .team-card {
+    width: 264px;
+    margin-bottom: 72px;
+   }
+
+   .team-card:last-child {
+    margin-bottom: 0px;
+   }
 }
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .container-team {
+        flex-wrap: wrap;
+    }
+    .team-card {
+        width: 264px;
+    }
+    .team-list {
+        width: 552px;
+    }
+
+}
+
+
+
+.container-team {    
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+    
+    .team-list {
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    .team-card {
+        flex-basis: calc((100% - 72px)) / 4;
+        }
+
+}
+
+
+
+
+
+
 
 /* Блоки пятої секції */
 
