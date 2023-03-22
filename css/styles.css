@@ -61,11 +61,15 @@ button {
 
 /* Блоки для хедера */
 
+
+
 .mobile-header-container {
     padding: 24px 16px;
     width: 428px;
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: space-between;
 }
 
@@ -241,7 +245,6 @@ button {
 .container-main {
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
@@ -275,6 +278,11 @@ button {
 
 
 @media (max-width: 767px) {
+
+    .container-main {
+        width: 428px;
+    }
+
     .hero-image {
         padding-top: 112px;
         padding-bottom: 112px;
@@ -304,6 +312,9 @@ button {
 }
 
 @media (min-width: 768px) {
+    .container-main {
+            width: 768px;
+        }
     .hero-image {
         padding-top: 112px;
         padding-bottom: 108px;
@@ -328,7 +339,12 @@ button {
 }
 
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+
+    .container-main {
+            width: 1200px;
+        }
+
     .hero-image {
         padding-top: 188px;
         padding-bottom: 188px;
@@ -364,7 +380,7 @@ button {
     color: var(--primary-text-color);
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .item-goals-svg {
         display: none;
     }
@@ -373,10 +389,13 @@ button {
 
 @media (max-width: 767px) {
     .container-goals {
+        width: 428px;
         padding-top: 96px;
         padding-right: 16px;
         padding-bottom: 96px;
         padding-left: 16px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .goals-title {
@@ -413,6 +432,9 @@ button {
 
 @media (min-width: 768px) {
 .container-goals {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
         padding-top: 96px;
         padding-right: 16px;
         padding-left: 16px;
@@ -437,7 +459,7 @@ button {
     
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .item-goals {
             width: 356px;
             margin-bottom: 72px;
@@ -479,7 +501,7 @@ button {
     margin: 0 auto;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     .container-goals {
         display: flex;
         justify-content: center;
@@ -520,7 +542,7 @@ button {
 
 /* Блоки третьої секції */
 
-@media (max-width: 1023px) {
+@media (max-width: 1199px) {
     .container-we-doing {
         display: none;
     }
@@ -607,8 +629,17 @@ button {
     text-align: center;
 }
 
+.container-team {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    align-items: center;
+}
+
 @media (max-width: 767px) {
     .container-team {
+        width: 428px;
         display: flex;
         flex-direction: column;
     }
@@ -623,31 +654,25 @@ button {
    }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1199px) {
     .container-team {
-        flex-wrap: wrap;
+        width: 768px;
+
     }
     .team-card {
         width: 264px;
     }
     .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
         width: 552px;
     }
 
 }
 
-
-
-.container-team {    
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;
-    padding-top: 120px;
-    padding-bottom: 120px;
-    align-items: center;
-}
-
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     
     .team-list {
             display: flex;
@@ -660,12 +685,6 @@ button {
         }
 
 }
-
-
-
-
-
-
 
 /* Блоки пятої секції */
 
