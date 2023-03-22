@@ -661,7 +661,18 @@ button {
     }
     .team-card {
         width: 264px;
+        margin-right: 24px;
+        margin-bottom: 64px;
     }
+
+    .team-card:nth-child(even) {
+        margin-right: 0px;
+    }
+
+    .team-card:nth-last-child(-n+2) {
+        margin-bottom: 0px;
+    }
+
     .team-list {
         display: flex;
         flex-wrap: wrap;
