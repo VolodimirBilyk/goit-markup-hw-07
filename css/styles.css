@@ -63,8 +63,9 @@ button {
 
 .mobile-header-container {
     padding: 24px 16px;
-    width: 100%;
+    width: 428px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -133,7 +134,7 @@ button {
     }
 
     .desktop-header-container {
-        width: 100%;
+        width: 768px;
         display: flex;
         justify-content: space-between;
         margin-left: auto;
@@ -178,7 +179,7 @@ button {
     }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1200px) {
     .logo {
         padding-bottom: 21.5px;
         margin-right: 76px;
@@ -206,6 +207,7 @@ button {
     }
 
     .desktop-header-container {
+        width: 1200px;
         padding-bottom: 0px;
     }
 
