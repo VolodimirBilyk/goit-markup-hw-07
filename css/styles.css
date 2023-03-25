@@ -1316,6 +1316,10 @@ button {
     transition: opacity 500ms, visibility 500ms;
 }
 
+@media (max-width: 768px) {
+    .
+}
+
 .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
@@ -1528,7 +1532,6 @@ textarea::placeholder {
     letter-spacing: 0.04em;
     color: var(--hero-image-text);
 
-    
     margin-top: 24px;
     margin-left: 95px;
     padding-top: 16px;
@@ -1555,21 +1558,14 @@ textarea::placeholder {
     margin-bottom: 8px;
 }
 
-
-
 .phone-block {
     position: relative;
     margin-top: 4px;
     margin-bottom: 8px;
 }
 
-
-
 .mail-block {
     position: relative;
     margin-top: 4px;
     margin-bottom: 8px;
 }
-
-
-
