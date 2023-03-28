@@ -1569,3 +1569,116 @@ textarea::placeholder {
     margin-top: 4px;
     margin-bottom: 8px;
 }
+
+/* Мобільне меню */
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 80px;
+    padding-right: 51px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    background-color: var(--basic-backcolor);
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    top: 40px;
+    right: 40px;
+    background: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.mobile-menu {
+    list-style: none;
+    margin-bottom: 284px;
+}
+
+.mobile-menu .link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-bottom: 40px;
+}
+
+.link:last-child {
+    margin-bottom: 0px;
+}
+
+.mobile-nav {
+    color: var(--futer-hero-backcolor);
+}
+
+.mobile-nav:hover,
+.mobile-nav:focus {
+    color: var(--btn-hov-foc-backcolor);
+}
+
+.address-item {
+    list-style: none;
+}
+
+.mobile-mail-link,
+.mobile-phone-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.mobile-mail-link:hover,
+.mobile-phone-link:hover,
+.mobile-mail-link:focus,
+.mobile-phone-link:focus {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;
+    color: var(--accent-text-color);
+}
+
+.address-item {
+    margin-bottom: 40px;
+}
+
+.address-item:last-child {
+    margin-bottom: 0px;
+}
+
+.mobile-address {
+    margin-bottom: 48px;}
+
+.mobile-socmedia-list {
+    list-style: none;
+    display: flex;
+    gap: 56px;
+}
+
+.mob-team-socmedia {
+    width: 24px;
+    height: 24px;
+}
