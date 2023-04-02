@@ -1313,6 +1313,7 @@ button {
     justify-content: center;
     padding-top: 12px;
     padding-bottom: 12px;
+    overflow-y: scroll;
     transition: opacity 500ms, visibility 500ms;
 }
 
